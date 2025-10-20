@@ -8,14 +8,22 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
     return Scaffold(
       appBar: AppBar(title: const Text('Klinik App')),
       body: ListView(
+        padding: const EdgeInsets.all(12),
         children: [
           Card(
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             child: ListTile(
-              leading: const Icon(Icons.local_hospital),
+              leading: CircleAvatar(
+                backgroundColor: scheme.primaryContainer,
+                foregroundColor: scheme.onPrimaryContainer,
+                child: const Icon(Icons.local_hospital),
+              ),
               title: const Text('Data Poli'),
+              subtitle: const Text('Kelola data poli klinik'),
               trailing: const Icon(Icons.chevron_right),
               onTap: () => Navigator.push(
                 context,
@@ -24,9 +32,15 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Card(
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             child: ListTile(
-              leading: const Icon(Icons.group),
+              leading: CircleAvatar(
+                backgroundColor: scheme.secondaryContainer,
+                foregroundColor: scheme.onSecondaryContainer,
+                child: const Icon(Icons.group),
+              ),
               title: const Text('Data Pegawai'),
+              subtitle: const Text('Kelola data pegawai'),
               trailing: const Icon(Icons.chevron_right),
               onTap: () => Navigator.push(
                 context,
@@ -35,9 +49,15 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Card(
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             child: ListTile(
-              leading: const Icon(Icons.personal_injury),
+              leading: CircleAvatar(
+                backgroundColor: scheme.tertiaryContainer,
+                foregroundColor: scheme.onTertiaryContainer,
+                child: const Icon(Icons.personal_injury),
+              ),
               title: const Text('Data Pasien'),
+              subtitle: const Text('Kelola data pasien'),
               trailing: const Icon(Icons.chevron_right),
               onTap: () => Navigator.push(
                 context,

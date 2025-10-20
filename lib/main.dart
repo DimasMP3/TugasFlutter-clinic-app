@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     final colorScheme = ColorScheme.fromSeed(seedColor: Colors.teal);
     return MaterialApp(
       title: 'Klinik App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: colorScheme,
@@ -43,6 +44,22 @@ class MyApp extends StatelessWidget {
         ),
         listTileTheme: const ListTileThemeData(
           contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        ),
+        inputDecorationTheme: InputDecorationTheme(
+          filled: true,
+          fillColor: colorScheme.surface,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: BorderSide(color: colorScheme.outline.withValues(alpha:0.5)),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: BorderSide(color: colorScheme.primary, width: 2),
+          ),
+          contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
         ),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
