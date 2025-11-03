@@ -12,7 +12,11 @@ class PasienPage extends StatefulWidget {
 class _PasienPageState extends State<PasienPage> {
   final List<Pasien> _items = [
     Pasien(id: 1, nomorRm: 'RM001', nama: 'Neng Renata', tanggalLahir: '2004-05-05', nomorTelepon: '081324532432435', alamat: 'Jl. BSI Margonda'),
-    Pasien(id: 2, nomorRm: 'RM002', nama: 'Uni BulanKuu', tanggalLahir: '2006-02-12', nomorTelepon: '081324532432436', alamat: 'Jl. Kesayangan 1'),
+    Pasien(id: 2, nomorRm: 'RM002', nama: 'Neng Indry', tanggalLahir: '2004-05-05', nomorTelepon: '081324532432435', alamat: 'Jl. BSI Margonda'),        Pasien(id: 2, nomorRm: 'RM002', nama: 'Neng Indry', tanggalLahir: '2004-05-05', nomorTelepon: '081324532432435', alamat: 'Jl. BSI Margonda'),
+    Pasien(id: 3, nomorRm: 'RM003', nama: 'Neng Dea', tanggalLahir: '2004-05-05', nomorTelepon: '081324532432435', alamat: 'Jl. BSI Margonda'),
+    Pasien(id: 4, nomorRm: 'RM004', nama: 'Neng Raras', tanggalLahir: '2004-05-05', nomorTelepon: '081324532432435', alamat: 'Jl. BSI Margonda'),
+    Pasien(id: 5, nomorRm: 'RM005', nama: 'Neng Anisya', tanggalLahir: '2004-05-05', nomorTelepon: '081324532432435', alamat: 'Jl. BSI Margonda'),
+    Pasien(id: 6, nomorRm: 'RM008', nama: 'Uni BulanKu', tanggalLahir: '2006-02-12', nomorTelepon: '081324532432436', alamat: 'Jl. Kesayangan 1'),
   ];
 
   @override
